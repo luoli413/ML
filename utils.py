@@ -65,7 +65,7 @@ def record_return(df, i, reb_index, weight_new, leverage, trading_days=252.0,
 
 
 # computing indicators
-def comput_idicators(df, trading_days, save_address, required=0.08, whole=1):
+def comput_indicators(df, trading_days, save_address, required=0.08, whole=1):
     # columns needed
     col = ['sp500', 'nav', 'rebalancing', 'stoploss', 'Interest_rate']
     df_valid = df.loc[:, col]
